@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Página anime inspirada y con datos de JKanime, AnimeFLV, SomosKudasai y MyAnimeList.">
+    <meta name="keywords" content="Página anime, noticias, popular, anime, en emision">
+    <meta name="author" content="Erick DC">
+    <meta name="copyright" content="Erick DC">
+    <meta name="robots" content="index,follow">
+
+    <!--=============== MARCADO DE OPEN GRAPH ===============-->
+    <meta property="og:url" content="https://erickdc7.github.io/Suikanime/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Suikanime" />
+    <meta property="og:description"
+        content="Página anime inspirada y con datos de JKanime, AnimeFLV, SomosKudasai y MyAnimeList." />
+    <meta property="og:image" content="https://erickdc7.github.io/Suikanime/assets/img/img-post.jpg" />
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Suikanime</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Suikanime</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#emision" class="nav__link active-link">Seasonal</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#popular" class="nav__link">Popular</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#news" class="nav__link">News</a>
+                    </li>
+                    <form action="" method="get" class="form">
+                        <input type="search" placeholder="Search anime..." class="seach__button">
+                        <i class="ri-search-line icon-search"></i>
+                    </form>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== EMISION ====================-->
+        <section class="section emision" id="emision">
+            <div class="section__title">
+                <h1>Seasonal</h1>
+                <span class="line"></span>
+                <p>25 animes<br>on airing</p>
+            </div>
+            <div class="anime__grid grid" id="animeon"></div>
+        </section>
+
+        <!--==================== POPULAR ====================-->
+        <section class="section popular" id="popular">
+            <div class="section__title">
+                <h1>Popular</h1>
+                <span class="line"></span>
+                <p>Top 10 most<br>popular anime</p>
+            </div>
+            <div class="popular__container swiper">
+                <div class="swiper-wrapper" id="animetop"></div>
+                <div class="swiper-button-next">
+                    <i class="ri-arrow-right-s-line"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="ri-arrow-left-s-line"></i>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== NEWS ====================-->
+        <section class="section news" id="news">
+            <div class="section__title">
+                <h1>News</h1>
+                <span class="line"></span>
+                <p>Anime and<br>manga news</p>
+            </div>
+            <div class="news__container grid">
+                <article class="news__article">
+                    <a href="https://somoskudasai.com/noticias/anime/asi-luce-y-se-ofrece-el-blu-ray-dvd-de-kaguya-sama-love-is-war/"
+                        target="_blank">
+                        <div class="news__article-img">
+                            <img loading="lazy" src="assets/img/news-1.jpg"
+                                alt="Así luce y se ofrece el Blu-ray/DVD de Kaguya-sama: Love is War">
+                        </div>
+                        <h2 class="news__article-title">
+                            Así luce y se ofrece el Blu-ray/DVD de Kaguya-sama: Love is War
+                        </h2>
+                        <p class="news__article-date">
+                            13 Jul, 2022
+                        </p>
+                    </a>
+                </article>
+
+                <article class="news__article">
+                    <a href="https://somoskudasai.com/noticias/manga/la-segunda-parte-de-chainsaw-man-acumula-millones-de-lecturas-en-solo-un-dia/"
+                        target="_blank">
+                        <div class="news__article-img">
+                            <img loading="lazy" src="assets/img/news-2.jpg"
+                                alt="La segunda parte de Chainsaw Man acumula millones de lecturas en solo un día">
+                        </div>
+                        <h2 class="news__article-title">
+                            La segunda parte de Chainsaw Man acumula millones de lecturas en solo un día
+                        </h2>
+                        <p class="news__article-date">
+                            13 Jul, 2022
+                        </p>
+                    </a>
+                </article>
+
+                <article class="news__article">
+                    <a href="https://somoskudasai.com/noticias/anime/el-anime-classroom-of-the-elite-celebra-su-quinto-aniversario/"
+                        target="_blank">
+                        <div class="news__article-img">
+                            <img loading="lazy" src="assets/img/news-3.jpg"
+                                alt="El anime Classroom of the Elite celebra su quinto aniversario">
+                        </div>
+                        <h2 class="news__article-title">
+                            El anime Classroom of the Elite celebra su quinto aniversario
+                        </h2>
+                        <p class="news__article-date">
+                            12 Jul, 2022
+                        </p>
+                    </a>
+                </article>
+
+                <article class="news__article">
+                    <a href="https://somoskudasai.com/noticias/manga/el-manga-kanojo-okarishimasu-celebra-su-quinto-aniversario/"
+                        target="_blank">
+                        <div class="news__article-img">
+                            <img loading="lazy" src="assets/img/news-4.jpg"
+                                alt="El manga Kanojo, Okarishimasu celebra su quinto aniversario">
+                        </div>
+                        <h2 class="news__article-title">
+                            El manga Kanojo, Okarishimasu celebra su quinto aniversario
+                        </h2>
+                        <p class="news__article-date">
+                            12 Jul, 2022
+                        </p>
+                    </a>
+                </article>
+
+                <article class="news__article">
+                    <a href="https://somoskudasai.com/noticias/anime/la-pelicula-de-kaguya-sama-love-is-war-tendra-version-para-television/"
+                        target="_blank">
+                        <div class="news__article-img">
+                            <img loading="lazy" src="assets/img/news-5.jpg"
+                                alt="La película de Kaguya-sama: Love is War tendrá versión para televisión">
+                        </div>
+                        <h2 class="news__article-title">
+                            La película de Kaguya-sama: Love is War tendrá versión para televisión
+                        </h2>
+                        <p class="news__article-date">
+                            11 Jul, 2022
+                        </p>
+                    </a>
+                </article>
+
+                <article class="news__article">
+                    <a href="https://somoskudasai.com/noticias/anime/dragon-ball-super-super-hero-revela-su-avance-en-espanol-latino-y-a-la-nueva-voz-de-gohan/"
+                        target="_blank">
+                        <div class="news__article-img">
+                            <img loading="lazy" src="assets/img/news-6.jpg"
+                                alt="Dragon Ball Super: Super Hero revela a la nueva voz de Gohan en español latino">
+                        </div>
+                        <h2 class="news__article-title">
+                            Dragon Ball Super: Super Hero revela a la nueva voz de Gohan en español latino
+                        </h2>
+                        <p class="news__article-date">
+                            11 Jul, 2022
+                        </p>
+                    </a>
+                </article>
+
+                <article class="news__article">
+                    <a href="https://somoskudasai.com/noticias/cultura-otaku/spy-x-family-fue-mas-popular-que-kimetsu-no-yaiba-y-jujutsu-kaisen-en-sus-inicios/"
+                        target="_blank">
+                        <div class="news__article-img">
+                            <img loading="lazy" src="assets/img/news-7.jpg"
+                                alt="SPY x FAMILY fue más popular que Kimetsu no Yaiba y Jujutsu Kaisen en sus inicios">
+                        </div>
+                        <h2 class="news__article-title">
+                            SPY x FAMILY fue más popular que Kimetsu no Yaiba y Jujutsu Kaisen en sus inicios
+                        </h2>
+                        <p class="news__article-date">
+                            11 Jul, 2022
+                        </p>
+                    </a>
+                </article>
+
+                <article class="news__article">
+                    <a href="https://somoskudasai.com/noticias/cultura-otaku/kaguya-sama-love-is-war-fue-el-mejor-anime-de-primavera-2022-segun-anime-trending/"
+                        target="_blank">
+                        <div class="news__article-img">
+                            <img loading="lazy" src="assets/img/news-8.jpg"
+                                alt="Kaguya-sama: Love is War fue el mejor anime de Primavera-2022 según Anime Trending">
+                        </div>
+                        <h2 class="news__article-title">
+                            Kaguya-sama: Love is War fue el mejor anime de Primavera-2022 según Anime Trending
+                        </h2>
+                        <p class="news__article-date">
+                            11 Jul, 2022
+                        </p>
+                    </a>
+                </article>
+
+                <article class="news__article">
+                    <a href="https://somoskudasai.com/noticias/cultura-otaku/umaru-doma-invade-spy-x-family-en-un-nuevo-video-viral/"
+                        target="_blank">
+                        <div class="news__article-img">
+                            <img loading="lazy" src="assets/img/news-9.jpg"
+                                alt="Umaru Doma invade SPY x FAMILY en un nuevo video viral">
+                        </div>
+                        <h2 class="news__article-title">
+                            Umaru Doma invade SPY x FAMILY en un nuevo video viral
+                        </h2>
+                        <p class="news__article-date">
+                            11 Jul, 2022
+                        </p>
+                    </a>
+                </article>
+
+                <article class="news__article">
+                    <a href="https://somoskudasai.com/noticias/cultura-otaku/llegan-criticas-hacia-el-doblaje-en-ingles-de-kaguya-sama-love-is-war/"
+                        target="_blank">
+                        <div class="news__article-img">
+                            <img loading="lazy" src="assets/img/news-10.jpg"
+                                alt="Llegan críticas hacia el doblaje en inglés de Kaguya-sama: Love is War">
+                        </div>
+                        <h2 class="news__article-title">
+                            Llegan críticas hacia el doblaje en inglés de Kaguya-sama: Love is War
+                        </h2>
+                        <p class="news__article-date">
+                            10 Jul, 2022
+                        </p>
+                    </a>
+                </article>
+
+                <article class="news__article">
+                    <a href="https://somoskudasai.com/noticias/anime/el-manga-isekai-shikkaku-tendra-adaptacion-al-anime/"
+                        target="_blank">
+                        <div class="news__article-img">
+                            <img loading="lazy" src="assets/img/news-11.jpg"
+                                alt="El manga Isekai Shikkaku tendrá adaptación al anime">
+                        </div>
+                        <h2 class="news__article-title">
+                            El manga Isekai Shikkaku tendrá adaptación al anime
+                        </h2>
+                        <p class="news__article-date">
+                            10 Jul, 2022
+                        </p>
+                    </a>
+                </article>
+
+                <article class="news__article">
+                    <a href="https://somoskudasai.com/noticias/cultura-otaku/kaguya-y-miyuki-interpretaron-el-opening-de-la-primera-temporada-de-kaguya-sama-love-is-war/"
+                        target="_blank">
+                        <div class="news__article-img">
+                            <img loading="lazy" src="assets/img/news-12.jpg"
+                                alt="Kaguya y Miyuki interpretaron el opening de la primera temporada de Kaguya-sama: Love is War">
+                        </div>
+                        <h2 class="news__article-title">
+                            Kaguya y Miyuki interpretaron el opening de la primera temporada de Kaguya-sama: Love is War
+                        </h2>
+                        <p class="news__article-date">
+                            10 Jul, 2022
+                        </p>
+                    </a>
+                </article>
+
+                <article class="news__article">
+                    <a href="https://somoskudasai.com/noticias/anime/el-anime-bocchi-the-rock-anuncia-su-fecha-de-estreno/"
+                        target="_blank">
+                        <div class="news__article-img">
+                            <img loading="lazy" src="assets/img/news-13.jpg"
+                                alt="El anime Bocchi the Rock! anuncia su fecha de estreno">
+                        </div>
+                        <h2 class="news__article-title">
+                            El anime Bocchi the Rock! anuncia su fecha de estreno
+                        </h2>
+                        <p class="news__article-date">
+                            10 Jul, 2022
+                        </p>
+                    </a>
+                </article>
+
+                <article class="news__article">
+                    <a href="https://somoskudasai.com/noticias/anime/el-anime-sasaki-to-miyano-tendra-una-pelicula-en-2023/"
+                        target="_blank">
+                        <div class="news__article-img">
+                            <img loading="lazy" src="assets/img/news-14.jpg"
+                                alt="El anime Sasaki to Miyano tendrá una película en 2023">
+                        </div>
+                        <h2 class="news__article-title">
+                            El anime Sasaki to Miyano tendrá una película en 2023
+                        </h2>
+                        <p class="news__article-date">
+                            9 Jul, 2022
+                        </p>
+                    </a>
+                </article>
+
+                <article class="news__article">
+                    <a href="https://somoskudasai.com/noticias/live-action/la-voz-de-chizuru-participara-en-el-live-action-de-kanojo-okarishimasu/"
+                        target="_blank">
+                        <div class="news__article-img">
+                            <img loading="lazy" src="assets/img/news-15.jpg"
+                                alt="La voz de Chizuru participará en el live-action de Kanojo, Okarishimasu">
+                        </div>
+                        <h2 class="news__article-title">
+                            La voz de Chizuru participará en el live-action de Kanojo, Okarishimasu
+                        </h2>
+                        <p class="news__article-date">
+                            9 Jul, 2022
+                        </p>
+                    </a>
+                </article>
+
+                <article class="news__article">
+                    <a href="https://somoskudasai.com/noticias/anime/shinigami-bocchan-to-kuro-maid-revela-un-avance-para-su-segunda-temporada/"
+                        target="_blank">
+                        <div class="news__article-img">
+                            <img loading="lazy" src="assets/img/news-16.jpg"
+                                alt="Shinigami Bocchan to Kuro Maid revela un avance para su segunda temporada">
+                        </div>
+                        <h2 class="news__article-title">
+                            Shinigami Bocchan to Kuro Maid revela un avance para su segunda temporada
+                        </h2>
+                        <p class="news__article-date">
+                            9 Jul, 2022
+                        </p>
+                    </a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="section footer">
+        <div class="footer__container container grid">
+            <div>
+                <a href="#" class="footer__logo">Suikanime</a>
+                <p class="footer__description"><!-- 
+                    Te brindamos la mejor información <br>
+                    sobre el anime y manga que más <br>
+                    te gusta. -->
+                    On this website you will find the anime that are <br>
+                    currently on the air, the most popular anime <br>
+                    and news related to anime and manga.
+                </p>
+            </div>
+
+            <div class="footer__content">
+                <div>
+                    <h3 class="footer__title">Menu</h3>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Home</a>
+                        </li>
+                        <li>
+                            <a href="#emision" class="footer__link">Seasonal</a>
+                        </li>
+                        <li>
+                            <a href="#popular" class="footer__link">Popular</a>
+                        </li>
+                        <li>
+                            <a href="#news" class="footer__link">News</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer__title">Support</h3>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Terms and Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">FAQs</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">About</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer__title">Social</h3>
+                    <ul class="footer__social">
+                        <li>
+                            <a href="#" class="footer__social-link">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__social-link">
+                                <i class="ri-twitter-line"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__copy">
+            <span>&#169 2022 Suikanime</span>
+            <span>Website design by Erick DC</span>
+        </div>
+    </footer>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
